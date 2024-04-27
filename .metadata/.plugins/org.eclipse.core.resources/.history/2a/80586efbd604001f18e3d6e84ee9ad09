@@ -1,0 +1,25 @@
+package entities;
+
+public class Funcionario {
+	private String name;
+	private Float salary;
+	public Funcionario(String name, Float salary) {
+		super();
+		this.name = name;
+		this.salary = salary;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Float getSalary() {
+		return salary;
+	}
+	public void setSalary(Float salary) {
+		this.salary = salary;
+	}
+	
+	
+}

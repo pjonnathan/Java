@@ -1,0 +1,30 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Funcionario;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		List<Funcionario> list = new ArrayList<>();
+		Funcionario fun1 = new Funcionario("joca", 4.5);
+		list.add(fun1);
+		
+		for (Funcionario x : list) {
+			System.out.println(x.getName());
+		}
+		
+		System.out.println("Quantos funcionarios quer registrar? ");
+		int n = sc.nextInt();
+		
+		
+		sc.close();
+	}
+
+}
